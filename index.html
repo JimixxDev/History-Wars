@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Wars</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="home" class="page">
+    <h1>⚔️ History Wars ⚔️</h1>
+    <input type="text" placeholder="Entrez votre pseudo..." id="username">
+    <p id="usernameError" class="error"></p>
+    <div class="buttons">
+      <button id="home_create">Créer une partie</button>
+      <button id="home_join">Rejoindre une partie</button>
+      <button id="home_catalog">Catalogue des cartes</button>
+    </div>
+  </div>
+
+  <div id="party_creation" class="page">
+    <div class="container">
+      <h1>Créer une partie</h1>
+      <div class="form-box">
+        <label>Nom de la salle :</label><br><br>
+        <input type="text" id="roomNameInput"><br><br>
+      </div>
+      <p id="roomNameError" class="error"></p>
+      <button id="create">Créer</button>
+      <button class="back">Retour</button>
+    </div>
+  </div>
+
+  <div id="party_join" class="page">
+    <div class="container">
+      <h1>Rejoindre une partie</h1>
+      <div class="form-box">
+        <label>ID de la partie :</label><br><br>
+        <input type="text" id="roomIdInput"><br><br>
+      </div>
+      <p id="joinError" class="error"></p>
+      <button id="join">Rejoindre</button>
+      <button class="back">Retour</button>
+    </div>
+  </div>
+
+  <div id="waiting_room" class="page">
+    <h1 id="roomName"></h1>
+    <h2 class="room-id">ID de partie : <span id="roomId"></span></h2>
+    <div class="playersBox">
+      <p id="player1" class="playerSlot"></p>
+      <p id="player2" class="playerSlot"></p>
+    </div>
+    <button id="start">Lancer</button>
+    <button id="leaveParty">Quitter</button>
+  </div>
+
+  <div id="credits" class="page">
+    <div class="container">
+      <h1>Crédits</h1>
+      <ul class="creditsList">
+        <li>Jimi : HTML / JS / PHP</li>
+        <li>Nicolas : HTML / CSS / Images / Diagramme</li>
+      </ul>
+      <button class="back">Retour</button>
+    </div>
+  </div>
+
+  <div id="loading" class="page">
+    <div class="container">
+      <h1>⚔️ History Wars ⚔️</h1>
+      <h2 id="loadingMsg"></h2>
+    </div>
+  </div>
+
+  <button id="home_credits">Crédits</button>
+
+</body>
+</html>

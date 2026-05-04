@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style_game.css">
+    <script src="script_game.js" defer></script>
+</head>
+
+<body>
+
+    <div id="playground">
+        <header class="header">
+            <div class="player1Info">
+                <span class="playerLabel">Joueur 1</span>
+                <span class="playerName" id="p1_name">—</span>
+                <span class="playerScore" id="p1_score">—</span>
+            </div>
+
+            <div class="partyInfo">
+                <span id="partyName"></span>
+                <div class="turnInfo">
+                    <span class="turn">TOUR <span class="turn" id="turnNum">1</span></span>
+                </div>
+                <span id="gameEvent" class="gameEvent">Distribution des cartes...</span>
+            </div>
+
+            <div class="player2Info">
+                <span class="playerLabel">Joueur 2</span>
+                <span class="playerName" id="p2_name">—</span>
+                <span class="playerScore" id="p2_score">—</span>
+            </div>
+        </header>
+
+        <section class="arena">
+            <div class="player" id="arena_p1"></div>
+            <div class="vs">VS</div>
+            <div class="player" id="arena_p2"></div>
+        </section>
+
+        <section class="deck">
+            <h2 class="title">Deck</h2>
+            <div class="cards" id="deck">
+            </div>
+        </section>
+
+        <section class="action">
+            <button id="btnAbandon" class="btn">Abandonner</button>
+        </section>
+    </div>
+
+    <div id="endScreen">
+        <div class="endContent">
+            <h1 id="endTitle">VICTOIRE</h1>
+            <h2 id="endWinner">Le gagnant est ...</h2>
+
+            <div class="endStats">
+                <p>⏱️ Nombre de tours : <span id="endTurns">0</span></p>
+                <div class="scores">
+                    <p><span id="endP1Name">Joueur 1</span> : <strong id="endP1Score">0</strong> pts</p>
+                    <p><span id="endP2Name">Joueur 2</span> : <strong id="endP2Score">0</strong> pts</p>
+                </div>
+            </div>
+
+            <button id="btnQuitGame" class="btn">Retour au Lobby</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

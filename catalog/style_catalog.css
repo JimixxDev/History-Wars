@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/library.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.catalog-title {
+    background-color: #ab5c07;
+    padding: 20px 60px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.back-button, .modal-content button {
+    background: #a24915;
+    color: #eee0c6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.back-button:hover, .modal-content button:hover {
+    transform: scale(1.05);
+    background: #3941af;
+    color: #b4c1d2;
+}
+
+.back-button {
+    position: absolute;
+    right: 0;
+}
+
+.modal-content button {
+    margin-top: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ab5c07;
+    color: #eee0c6;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background-color: #e16a02;
+    transform: scale(1.05);
+}
+
+.modal-window {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ff9808;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.modal-content img {
+    width: 130px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin: 0;
+}
